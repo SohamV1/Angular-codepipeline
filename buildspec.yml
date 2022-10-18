@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    runtime-version:
+      nodejs: 10
+pre-build:
+  commands:
+    - echo installing dependancies
+    - npm install -g @angular/cli
+build:
+  commands:
+    - npm install
+artifacts:
+  files:
+    - '**/*'
